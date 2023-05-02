@@ -1,0 +1,28 @@
+.popup {
+position: false;
+top:0;
+left: 0;
+width: 1005;
+height: 100vh;
+background-image: linear-gradient(40deg, #B4FEE7, #A16AE8 90%);
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.popup-inner {
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color: azure;
+}
+
+
+
+.popup-inner .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}

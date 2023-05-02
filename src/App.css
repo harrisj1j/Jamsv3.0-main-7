@@ -1,0 +1,470 @@
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(40deg, #B4FEE7, #A16AE8 90%);
+}
+
+ .login-form, .register-form, .forgotpass-form, .debits-form, .credits-form {
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+.aa-form-container{
+  align-content: center;
+  display: table-column;
+  
+  width: 60%;
+  padding: 2rem;
+  background: #A16AE8;
+  border-radius: 10px;
+  margin-top:5rem;
+  
+  color: white;
+  box-shadow: 3px 5px 5px grey;
+}
+.addaccount-form{
+  margin-top: 5rem;
+
+  align-content: center;
+
+  display: flex;
+  flex-direction: row;
+  
+}
+h1{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.dashbox{
+  display: flex;
+  flex-direction: row;
+}
+.dash-container{
+  display: table;
+}
+.column-container{
+  display: column;
+  width: 100rem;
+  padding: 2rem;
+  background: #A16AE8;
+  border-radius: 10px;
+}
+.column-container-invis{
+  margin-top:10rem;
+  display: flex;
+  flex-direction: column;
+}
+.select-report{
+  width: 20rem;
+}
+.view-accounts-container, .ledger-container, .edit-form-container, .approval-container  {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.trial-balance-container{
+ 
+  display: column;
+}
+.balance-sheet-container{
+  display: flex;
+  flex-direction: row;
+  
+}
+.bs-table-container{
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin-left: 5rem;
+
+}
+.notifications-container{
+  width: 80rem;
+  height: 50rem;
+  padding: 2rem;
+  background: #A16AE8;
+  border-radius: 10px;
+  margin-top:10rem;
+  
+  color: white;
+  box-shadow: 3px 5px 5px grey;
+}
+.home-container{
+  margin-top: 10rem;
+}
+.trial-balance-container{
+  width: 80rem;
+  padding: 2rem;
+  background: #A16AE8;
+  border-radius: 10px;  
+  color: white;
+  box-shadow: 3px 5px 5px grey;
+
+}
+.view-accounts-container{
+  display: block;
+  height: 50rem;
+  overflow: auto;
+  margin-top: 5rem;
+}
+
+.je-form-container{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.authdetails {
+  right: auto;
+  justify-content: space-between;
+  text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #b4fee7;
+    transition: 0.3s ease-in-out;
+    margin-left: 50rem;
+}
+.big-logo {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin-right: 10rem;
+  
+}
+
+.dashboard-button{
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color:rgb(255, 255, 255);
+  transition: 0.3s ease-in-out;
+}
+.card {
+  padding: 5rem;
+  width: 20rem;
+  height: 25rem;
+  background: #A16AE8;
+  border-radius: 10px;
+  margin: 0.5rem;
+  color: white;
+  box-shadow: 3px 5px 5px grey;
+  
+}
+.custom-button {
+  
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: .5rem;
+  background: #603f8b;
+  border-radius: 3px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color:#b4fee7;
+  box-shadow: 3px 3px 3px grey;
+}
+.custom-button-tb {
+  
+  font-size: 1.3rem;
+  font-weight: 600;
+  width:20rem;
+  padding: .5rem;
+  background: #603f8b;
+  border-radius: 3px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color:#b4fee7;
+  box-shadow: 3px 3px 3px grey;
+}
+.custom-button2 {
+  
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: .5rem;
+  background: none;
+  color:#b4fee7;
+}
+.custom-button3 {
+  
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: .5rem;
+  background: none;
+  margin-top: 2rem;
+  color:#fd49a0;
+}
+
+.custom-button-je {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: .2rem;
+  background:none;
+  border-radius: 3px;
+  color:#b4fee7;
+  box-shadow: 3px 3px 3px grey;
+}
+.addrem {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.custom-button-calc {
+  
+  align-self: center;
+  width:fit-content;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 1.5rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  background: #603f8b;
+  border-radius: 3px;
+  margin-top: 1rem;
+  color: #b4fee7;
+  box-shadow: 3px 3px 3px grey;
+}
+.custom-button-va {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: .5rem;
+  background: none;
+
+  color:#b4fee7;
+}
+
+.debit-form{
+  
+  display:flex;
+  flex-direction: row;
+  text-align: left;
+}
+label {
+  font-size: 1.3rem;
+    font-weight: 600;
+  text-align: left;
+  padding: 0.25rem 1rem;
+}
+
+input {
+  color:  #b4fee7;
+  margin: 0.5rem .5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 3px;
+  background: #7d52b4;
+
+}
+.input-large{
+  width: 60rem;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 1px;
+
+}
+input::file-selector-button {
+  font-weight: bold;
+  color: white;
+  background: #A16AE8;
+  padding: 0.5em;
+  border: thin solid grey;
+  border-radius: 3px;
+}
+
+.je-container{
+  width: 100%;
+  padding: 2rem;
+  background: #A16AE8;
+  border-radius: 10px;
+  margin-top:5rem;
+  
+  color: white;
+  box-shadow: 3px 5px 5px grey;
+}
+.je-form-input{
+  display: flex;
+  flex-direction:row;
+ 
+}
+
+.je-box-1, .je-box-2{
+  padding: 2rem;
+  display:flex;
+  flex-direction: column;
+}
+
+.debits-form{
+  display: flex;
+  flex-direction:column;
+}
+.credits-form{
+  display: flex;
+  flex-direction:column;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  color: #7439db;
+}
+
+li {
+  list-style-type: none;
+}
+.page-title{
+  top:10rem;
+}
+
+
+.popup-content {  
+  align-content: center;
+  text-align: center;
+  color: white;
+  margin: auto;  
+  background: #A16AE8;
+  width: 20%; 
+  
+  padding: 10px 5px;
+}
+
+.popup-arrow {  
+  color: rgb(255, 255, 255);}
+  [role='tooltip'].popup-content {  
+    width: 200px;  
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+  }
+.popup-overlay {  
+  
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {  font-size: 12px;}.modal > .header {  width: 100%;  border-bottom: 1px solid gray;  font-size: 18px;  text-align: center;  padding: 5px;}.modal > .content {  width: 100%;  padding: 10px 5px;}.modal > .actions {  width: 50%;  padding: 10px 5px;  margin: auto;  text-align: center;}.modal > .close {  cursor: pointer;  position: absolute;  display: block;  padding: 2px 5px;  line-height: 20px;  right: -10px;  top: -10px;  font-size: 24px;  background: #ffffff;  border-radius: 18px;  border: 1px solid #cfcece;}
+
+[data-popup='tooltip'].popup-overlay {  background: transparent;}
+
+select{
+  height: 4.5rem;
+  position: relative;
+ 
+  margin: 0px;
+  margin-left: 2px;
+  padding: 1rem;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgb(37, 37, 37);
+  color:  #b4fee7;
+  background-color: #8d5fc9;
+}
+.je-select{
+  height: 4.5rem;
+  position: relative;
+ 
+  margin: 0px;
+  margin-left: 2px;
+  padding: 1rem;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgb(37, 37, 37);
+  color:  #b4fee7;
+  background-color: #8d5fc9;
+}
+
+
+
+
+
+.va-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.va-button li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  
+}
+
+.va-button li a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #a16ae8;
+  transition: 0.3s ease-in-out;
+
+}
+.va-button li a:hover, #navbar li a.active{
+  color: #fd49a0
+}
+.va-button li a:hover::after, #navbar li a.active::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #fd49a0;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+}
+
+@media screen and (min-width: 600px){
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid #B4FEE7;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+.alert-container {
+  margin: 15px;
+  display: flex;
+  color:crimson;
+}
+
+.symbol-container {
+  width: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.symbol {
+  font-size: 1.75rem;
+}
+
+.description-container {
+  font-size: 1.05rem;
+  margin: 15px 20px;
+  width: 100%;
+}
+
+.description-title {
+  font-weight: 700;
+}
+
+.symbol-close-link {
+  margin-top: -10px;
+  cursor: pointer;
+}

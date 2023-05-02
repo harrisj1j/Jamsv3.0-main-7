@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #603f8b;
+    padding: 2px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  
+  }
+  
+
+  #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  #navbar li{
+    color:#b4fee7;
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    
+  }
+  
+  #navbar li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #b4fee7;
+    transition: 0.3s ease-in-out;
+  
+  }
+  #navbar li a:hover, #navbar li a.active{
+    color: #fd49a0
+  }
+  #navbar li a:hover::after, #navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #fd49a0;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+  .nav-logo {
+    display: flex;
+    max-height: 5%;
+    margin-right: 10rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+
+  label {
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+  
+  input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  button {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: #7439db;
+  }
+
+  .link-btn {
+    background: none;
+    color: white;
+  }
+  
