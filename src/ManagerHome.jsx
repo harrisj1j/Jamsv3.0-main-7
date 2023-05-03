@@ -8,7 +8,7 @@ import { BiAddToQueue} from 'react-icons/bi';
 import {AiFillCheckCircle} from  'react-icons/ai'
 import {TrialBalance} from './TrialBalance'
 import {FaBalanceScaleLeft} from 'react-icons/fa'
-
+import React, { useState } from 'react';
 
 export const ManagerHome = (props) => {
 const [searchQuery, setSearchQuery] = useState('');
@@ -16,6 +16,31 @@ const [journalEntries, setJournalEntries] = useState([]);
 const [filteredEntryIds, setFilteredEntryIds] = useState([]);
 const [searchByDate, setSearchByDate] = useState(false);
 
+const handleKeyPress = (e) => {
+    if (e.key == 'Enter'){
+        handleSearch();
+    }
+};
+
+const handleToggle = () => {
+setSearchByDate(!searchByDate);
+};
+
+const handleSearch = () => {
+    const filteredIds = journalEntries
+    .filter((entry) => {
+        if (searchByDate) {
+            return entry.date.include(searchQuery)
+        } else {
+            return (
+                entry.accountName.includes(searchQuery) ||
+                entry.amount.toString().includes(searchQuery)
+            );
+        }
+    })
+.map((entry) => entry.id);
+setFilteredEntryIds(filteredIds);
+};
 
 
     return (
@@ -31,7 +56,7 @@ const [searchByDate, setSearchByDate] = useState(false);
 <div className="card">
 <h3>Searching Journal Entries</h3>
 <input type="text" value={searchQuery}
-onchange={(e)   => setSearchQuery(e.target.value)}      
+onChange={(e)   => setSearchQuery(e.target.value)}      
 onKeyPress={handleKeyPress}
 />
 <label>
